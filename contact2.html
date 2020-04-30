@@ -1,0 +1,43 @@
+<html>
+<link rel="stylesheet" type="text/CSS" href="twitch.css"/>
+<div id=links>
+<span id=hom><a href="CSS HTML targil.html">Homepage</a></span>
+<span id=gal><a href="gallery2.html">Gallery</a></span>
+<span id=abo><a href="about.html">About</a></span>
+<span id=con><a href="contact2.html">Contact</a></span>
+</div>
+<body>
+<style>
+#contact{
+	font-size:1.5em;
+}
+</style>
+<h1>Drop us a nice message</h1>
+<Div id=contact>
+First name: <input style="font-size:20px" id="Fname" type="text" value="">
+Last name: <input style="font-size:20px" id="Lname" type="text" value=""> <br><br>
+Address: <input style="font-size:20px" id="Add" type="text" value=""> <br><br>
+Gender:
+<input type="radio" name="gen" value="Male"> Male
+<input type="radio" name="gen" value="Female"> Female
+<input type="radio" name="gen" value="Other"> Other
+
+<br>
+ <br><br><br>
+What's on your mind? <br>
+<textarea style="font-size:20px" id="txt" rows="4" cols="50" value="hello"></textarea> <br><br>
+<input style="font-size:1em" type="button" value="Send" onclick="datafeed()">
+<script language="javascript">
+function datafeed(){
+	var x= document.getElementById("Fname").value.fontsize(70)
+	var y= document.getElementById("Lname").value.fontsize(70)
+	var z= document.getElementById("Add").value.fontsize(70)
+	var q= document.getElementById("txt").value.fontsize(70)
+	var r= document.querySelector("input[name=gen]:checked").value.fontsize(70)
+	document.write("Name: "+x+" "+y+"<br>From: "+z+"<br>Gender: "+r+"<br>Message: "+q)
+}
+
+</script>
+</Div>
+</body>
+</html>
